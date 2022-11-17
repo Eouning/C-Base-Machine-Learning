@@ -1,4 +1,4 @@
-#include "界面控制组件.h"
+#include "线性回归相关.h"
 
 //线性回归演示界面
 void Linear_regression_presentaion() {
@@ -14,8 +14,9 @@ Ori:
     char TextName3[] = "学习率:";
 
     int Rank = 1;
-    int interation = 10;
-    double Learning_rat =0.001;
+    int interation = 10000000;
+    double Learning_rat =0.01;
+    Train* Head=NULL;
 
     cleardevice();//清空
 
@@ -51,12 +52,14 @@ Ori:
     Text_show(860, 200, 100, 30, Text2, TextName2);
 
     char* Text3;
-    double_to_string(Learning_rat, &Text3, 3);
+    double_to_string(Learning_rat, &Text3, 2);
     Text_show(860, 300, 100, 30, Text3, TextName3);
     
     //循环读入用户鼠标键盘的相关操作
     while (true)
     {
+        Again:
+
         ExMessage msg;
         setlinecolor(BLACK);
         setfillcolor(BLACK);
@@ -68,6 +71,7 @@ Ori:
 
                 if (msg.x >= 25 && msg.x <= 725 && msg.y >= 25 && msg.y <= 600) {
                     fillcircle(msg.x, msg.y, 2);
+                    Train_append(msg.x, msg.y, &Head);
                 }
                 if (msg.x >= 430 && msg.x <= 630 && msg.y >= 650 && msg.y <= 700) {
                     goto Ori;
@@ -101,10 +105,29 @@ Ori:
 
 //正式开始线性回归演示
 Next:
-    while (true)
-    {
+    
 
+    //初始化w[]与b
+    double* w = (double*)malloc(sizeof(double) * Rank);
+    double b = 9;
+    for (int i = 0; i < Rank; i++) {
+        w[i] = 1;
     }
 
+    //线性回归实现
+    Liner(interation, 0.001*Learning_rat, Head, w, &b, Rank);
 
+    char TextName8[] = "w:";
+    char* Text8;
+    double_to_string(w[1], &Text8, 5);
+    Text_show(860, 400, 100, 30, Text8, TextName8);
+
+    for (double i = 25; i < 725; i++) {
+        double y = now(i, w, b, Rank);
+        if (y>25 && y <600) {
+            putpixel(i, y, RED);
+        }
+    }
+
+    goto Again;
 }

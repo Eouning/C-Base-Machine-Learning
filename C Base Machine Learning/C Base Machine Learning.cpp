@@ -26,28 +26,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     
     //---------------------------------------
 
-    initgraph(648, 512);//背景分辨率
-    setbkcolor(WHITE);//背景颜色
-    cleardevice();//清空
-
-    HWND hWnd = GetHWnd();
-    SetWindowText(hWnd, "这只是一个普通的窗口名称 O-O");
-
-    int istr = 1;
-    while (istr)
-    {
-        ExMessage msg;
-        if (peekmessage(&msg, EM_MOUSE)) {
-            switch (msg.message)
-            {
-            case WM_LBUTTONDOWN:
-                istr = 0;
-                break;
-            default:
-                break;
-            }
-        }
-    }
     Linear_regression_presentaion();
 
     //---------------------------------------

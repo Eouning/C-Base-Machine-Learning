@@ -145,6 +145,7 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="界面控制组件.h" />
+    <ClInclude Include="线性回归相关.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C Base Machine Learning.cpp" />

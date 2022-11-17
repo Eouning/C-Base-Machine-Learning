@@ -326,7 +326,7 @@ void Text_Box_for_double(int x, int y, int w, int h, char name[], double* num) {
                 Sleep(200);
             }
 
-            if (GetAsyncKeyState(VK_OEM_PERIOD) & 0x8000 ) {
+            if (GetAsyncKeyState(VK_OEM_PERIOD) & 0x8000 && Decimal_places==0) {
                 char* Text;
                 double_to_string(*num / pow(10, Decimal_places), &Text, Decimal_places);
                 小数点有(x, y, w, h, Text);
@@ -374,6 +374,7 @@ void Text_Box_for_double(int x, int y, int w, int h, char name[], double* num) {
                         char* Text;
                         double_to_string(*num / pow(10, Decimal_places), &Text, Decimal_places);
                         光标灭(x, y, w, h, Text);
+                        *num /= pow(10, Decimal_places);
                         is_True = 0;
                     }
                     break;
@@ -401,7 +402,7 @@ void Text_Box_for_double(int x, int y, int w, int h, char name[], double* num) {
                 Sleep(200);
             }
 
-            if (GetAsyncKeyState(VK_OEM_PERIOD) & 0x8000) {
+            if (GetAsyncKeyState(VK_OEM_PERIOD) & 0x8000 && Decimal_places == 0) {
                 char* Text;
                 double_to_string(*num / pow(10, Decimal_places), &Text, Decimal_places);
                 小数点有(x, y, w, h, Text);
