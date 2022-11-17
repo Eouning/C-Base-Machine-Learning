@@ -30,6 +30,9 @@
     <ClInclude Include="Liner.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="界面控制组件.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C Base Machine Learning.cpp">
