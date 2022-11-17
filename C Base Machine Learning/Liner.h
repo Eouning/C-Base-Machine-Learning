@@ -15,7 +15,7 @@ Ori:
 
     int Rank = 1;
     int interation = 10;
-    double Learning_rat =34.001;
+    double Learning_rat =0.001;
 
     cleardevice();//Çå¿Õ
 

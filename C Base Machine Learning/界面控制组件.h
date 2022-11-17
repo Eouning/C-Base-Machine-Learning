@@ -126,7 +126,7 @@ void 光标闪(int x, int y, int w, int h, char text[]) {
     setbkmode(TRANSPARENT);
 
     settextcolor(BLACK);
-    outtextxy(x - 1 + width, y + 0.5 * h - 10, 光标);
+    outtextxy(x + 4 + width, y + 0.5 * h - 10, 光标);
 
 }
 void 光标灭(int x, int y, int w, int h, char text[]) {
@@ -139,7 +139,33 @@ void 光标灭(int x, int y, int w, int h, char text[]) {
     setbkmode(TRANSPARENT);
 
     settextcolor(WHITE);
-    outtextxy(x - 1 + width, y + 0.5 * h - 10, 光标);
+    outtextxy(x + 4 + width, y + 0.5 * h - 10, 光标);
+
+}
+void 小数点有(int x, int y, int w, int h, char text[]) {
+
+    char 小数点[] = ".";
+
+    double width = textwidth(text);
+    double heigh = textheight(text) / 2.0;
+    settextstyle(20, 0, "黑体");
+    setbkmode(TRANSPARENT);
+
+    settextcolor(BLACK);
+    outtextxy(x +2 + width, y + 0.5 * h - 10, 小数点);
+
+}
+void 小数点无(int x, int y, int w, int h, char text[]) {
+
+    char 小数点[] = ".";
+
+    double width = textwidth(text);
+    double heigh = textheight(text) / 2.0;
+    settextstyle(20, 0, "黑体");
+    setbkmode(TRANSPARENT);
+
+    settextcolor(WHITE);
+    outtextxy(x+2 + width, y + 0.5 * h - 10, 小数点);
 
 }
 
@@ -272,6 +298,7 @@ void Text_Box_for_double(int x, int y, int w, int h, char name[], double* num) {
                         char* Text;
                         double_to_string(*num / pow(10, Decimal_places), &Text, Decimal_places);
                         光标灭(x, y, w, h, Text);
+                        *num /= pow(10, Decimal_places);
                         is_True = 0;
                     }
                     break;
@@ -281,6 +308,12 @@ void Text_Box_for_double(int x, int y, int w, int h, char name[], double* num) {
             }
 
             if (GetAsyncKeyState(VK_BACK) & 0x8000) {
+                {
+                    char* Text;
+                    double_to_string(*num / pow(10, Decimal_places), &Text, Decimal_places);
+                    小数点无(x, y, w, h, Text);
+                }
+
                 *num /= 10;
                 *num = (int)*num;
                 if (Decimal_places>0) {
@@ -294,11 +327,22 @@ void Text_Box_for_double(int x, int y, int w, int h, char name[], double* num) {
             }
 
             if (GetAsyncKeyState(VK_OEM_PERIOD) & 0x8000 ) {
+                char* Text;
+                double_to_string(*num / pow(10, Decimal_places), &Text, Decimal_places);
+                小数点有(x, y, w, h, Text);
                 only_has_point = 1;
+                Sleep(200);
             }
 
             for (int i = 48; i < 58; i++) {
                 if (GetAsyncKeyState(i) & 0x8000 && *num < 10000000) {
+
+                    {
+                        char* Text;
+                        double_to_string(*num / pow(10, Decimal_places), &Text, Decimal_places);
+                        小数点无(x, y, w, h, Text);
+                    }
+
                     if (Decimal_places > 0 || only_has_point)
                     {
                         only_has_point = 0;
@@ -339,6 +383,12 @@ void Text_Box_for_double(int x, int y, int w, int h, char name[], double* num) {
             }
 
             if (GetAsyncKeyState(VK_BACK) & 0x8000) {
+                {
+                    char* Text;
+                    double_to_string(*num / pow(10, Decimal_places), &Text, Decimal_places);
+                    小数点无(x, y, w, h, Text);
+                }
+
                 *num /= 10;
                 *num = (int)*num;
                 if (Decimal_places > 0) {
@@ -352,11 +402,22 @@ void Text_Box_for_double(int x, int y, int w, int h, char name[], double* num) {
             }
 
             if (GetAsyncKeyState(VK_OEM_PERIOD) & 0x8000) {
+                char* Text;
+                double_to_string(*num / pow(10, Decimal_places), &Text, Decimal_places);
+                小数点有(x, y, w, h, Text);
                 only_has_point = 1;
+                Sleep(200);
             }
 
             for (int i = 48; i < 58; i++) {
                 if (GetAsyncKeyState(i) & 0x8000 && *num < 10000000) {
+
+                    {
+                        char* Text;
+                        double_to_string(*num / pow(10, Decimal_places), &Text, Decimal_places);
+                        小数点无(x, y, w, h, Text);
+                    }
+
                     if (Decimal_places > 0 || only_has_point)
                     {
                         only_has_point = 0;
