@@ -26,6 +26,19 @@ void button(int x, int y, int w, int h, char text[]) {
     double heigh = textheight(text) / 2.0;
     outtextxy(x + 0.5 * w - width, y + 0.5 * h - heigh, text);
 }
+void button1(int x, int y, int w, int h, char text[]) {
+    //生成按钮背景
+    setlinecolor(BLACK);
+    setfillcolor(RGB(224, 424, 300));
+    fillroundrect(x, y, x + w, y + h, 10, 10);
+
+    //居中显示按钮文字
+    settextstyle(25, 0, "黑体");
+    setbkmode(TRANSPARENT);
+    double width = textwidth(text) / 2.0;
+    double heigh = textheight(text) / 2.0;
+    outtextxy(x + 0.5 * w - width, y + 0.5 * h - heigh, text);
+}
 
 //输出文本框（不含光标闪烁）
 void Text_show(int x, int y, int w, int h, char text[], char name[]) {
@@ -221,8 +234,7 @@ void Text_Box_for_int(int x, int y, int w, int h, char name[], int* num) {
         }
 
 
-        for (int i = 0; i < 30; i++) {
-            Sleep(1);
+        for (int i = 0; i < 100000; i++) {
             if (peekmessage(&msg, EM_MOUSE)) {
                 switch (msg.message)
                 {
@@ -265,8 +277,7 @@ void Text_Box_for_int(int x, int y, int w, int h, char name[], int* num) {
             光标灭(x, y, w, h, Text);
         }
 
-        for (int i = 0; i < 30; i++) {
-            Sleep(1);
+        for (int i = 0; i < 100000; i++) {
             if (peekmessage(&msg, EM_MOUSE)) {
                 switch (msg.message)
                 {
@@ -326,8 +337,7 @@ void Text_Box_for_double(int x, int y, int w, int h, char name[], double* num) {
         }
 
 
-        for (int i = 0; i < 30; i++) {
-            Sleep(1);
+        for (int i = 0; i < 100000; i++) {
             if (peekmessage(&msg, EM_MOUSE)) {
                 switch (msg.message)
                 {
@@ -402,8 +412,7 @@ void Text_Box_for_double(int x, int y, int w, int h, char name[], double* num) {
             光标灭(x, y, w, h, Text);
         }
 
-        for (int i = 0; i < 30; i++) {
-            Sleep(1);
+        for (int i = 0; i < 100000; i++) {
             if (peekmessage(&msg, EM_MOUSE)) {
                 switch (msg.message)
                 {
@@ -473,4 +482,3 @@ void Text_Box_for_double(int x, int y, int w, int h, char name[], double* num) {
         }
     }
 }
-

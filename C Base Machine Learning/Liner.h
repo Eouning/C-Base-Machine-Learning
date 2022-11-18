@@ -8,6 +8,8 @@ void Linear_regression_presentaion() {
     setbkcolor(WHITE);//背景颜色
 
 Ori:
+    cleardevice();//清空
+
     //初始化
     char TextName2[] = "拟合阶数:";
     char TextName1[] = "学习次数:";
@@ -15,14 +17,9 @@ Ori:
 
     int count = 0;//数据集中数据个数
     int Rank = 1;
-    int interation = 1000;
-    double Learning_rat =0.01;
+    int interation = 100000;
+    double Learning_rat =1;
     Train* Head=NULL;
-
-    cleardevice();//清空
-
-    HWND hWnd = GetHWnd();
-    SetWindowText(hWnd, "这只是一个普通的窗口名称 O-O");
 
     setlinecolor(BLACK);
     setfillcolor(BLACK);
@@ -34,6 +31,11 @@ Ori:
     setlinecolor(RGB(124, 124, 124));
     setfillcolor(RGB(234, 234, 234));
     fillrectangle(25, 25, 725, 600);
+
+    HWND hWnd = GetHWnd();
+    SetWindowText(hWnd, "这只是一个普通的窗口名称 O-O");
+
+Again:
 
     char buttonText1[] = "开始线性回归";
     button(50, 650, 200, 50, buttonText1);
@@ -53,14 +55,12 @@ Ori:
     Text_show(860, 200, 100, 30, Text2, TextName2);
 
     char* Text3;
-    double_to_string(Learning_rat, &Text3, 2);
+    double_to_string(Learning_rat, &Text3, 6);
     Text_show(860, 300, 100, 30, Text3, TextName3);
     
     //循环读入用户鼠标键盘的相关操作
     while (true)
     {
-        Again:
-
         ExMessage msg;
         setlinecolor(BLACK);
         setfillcolor(BLACK);
@@ -117,19 +117,35 @@ Next:
     }
 
     //线性回归实现
-    Liner(10000*interation, 0.001*Learning_rat, Head, w, &b,Rank,count);
+    Liner(10000*interation, 0.00001*Learning_rat, Head, w, &b,Rank,count);
 
     char TextName8[] = "b:";
     char* Text8;
     double_to_string(b, &Text8, 5);
     Text_show(860, 400, 100, 30, Text8, TextName8);
 
-    for (double i = 25; i < 725; i++) {
+    char TextName9[] = "w[最高位]:";
+    char* Text9;
+    double_to_string(w[0], &Text9, 5);
+    Text_show(860, 450, 100, 30, Text9, TextName9);
+
+    for (double i = 25; i < 725; i+=0.1) {
         double y = now(i-325, w, b, Rank)+325;
         if (y>25 && y <600) {
             putpixel(i, y, RED);
         }
     }
+
+    //确保点在线上
+    Train* p = Head;
+    while (p)
+    {
+        setfillcolor(BLACK);
+        fillcircle(p->X + 325, p->Y + 325, 2);
+        p = p->Next;
+    }
+
+    free(w);
 
     goto Again;
 }
