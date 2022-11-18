@@ -53,6 +53,44 @@ void Text_show(int x, int y, int w, int h, char text[], char name[]) {
     double heigh = textheight(name) / 2.0;
     outtextxy(x - width - 10, y + 0.5 * h - heigh, name);
 }
+//信息显示
+void Inform_show(int x, int y, int w, int h, char text[], char name[]) {
+
+    //生成文本框背景
+    setlinecolor(BLACK);
+    setfillcolor(RGB(400, 440, 480));
+    fillrectangle(x, y, x + w, y + h);
+
+    settextcolor(BLACK);
+    {
+        //靠左显示文本
+        settextstyle(15, 0, "黑体");
+        setbkmode(TRANSPARENT);
+        double width = textwidth(text);
+        double heigh = textheight(text) / 2.0;
+        outtextxy(x + 3, y + 0.5 * h - heigh, text);
+    }
+
+
+    //在左显示文本框名称
+    settextstyle(15, 0, "黑体");
+    setbkmode(TRANSPARENT);
+    double width = textwidth(name);
+    double heigh = textheight(name) / 2.0;
+    outtextxy(x - width - 10, y + 0.5 * h - heigh, name);
+}
+//过程信息删除
+void Inform_delete(int x, int y, int w, int h, char name[]) {
+
+    //生成文本框背景
+    setlinecolor(WHITE);
+    setfillcolor(WHITE);
+    settextstyle(15, 0, "黑体");
+    double width = textwidth(name);
+
+    fillrectangle(x-width-10, y, x + w, y + h);
+
+}
 
 //将Int型数据转化为字符串
 void IntToString(int x, char** ptext) {

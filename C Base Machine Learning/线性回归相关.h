@@ -38,48 +38,64 @@ double now(double x, double w[], double b, int Rank) {
 	return result + b;
 }
 
-//依据代价函数对w进行迭代
-double J_1(Train* Head, double w[], double b, int px, int Rank) {
-	double j = 0;
-	Train* p = Head;
-	int NUM = 0;
-
-	while (p)
-	{
-		j += (now(p->X, w, b, Rank) - p->Y) * pow(p->X, Rank - px);
-		NUM++;
-		p = p->Next;
-	}
-
-	return j/NUM;
-}
-
-//依据代价函数对b进行迭代
-double J_2(Train* Head, double w[], double b, int Rank) {
-	double j = 0;
-	int NUM = 0;
+//梯度下降算法
+void Gradient_descent(Train* Head, double w[], double* b, int px, int Rank,double Learning_rat,int count) {
+	double j = 0,k=0;
 	Train* p = Head;
 
 	while (p)
 	{
-		j += (now(p->X, w, b, Rank) - p->Y);
-		NUM++;
+		double i = (now(p->X, w, *b, Rank) - p->Y)/count;
+		j += i;
+		k += i * pow(p->X, Rank - px);
 		p = p->Next;
 	}
 
-	return j /NUM;
+	*b-= Learning_rat*j;
+	w[px] -= Learning_rat * k;
+
 }
 
 //线性回归
-void Liner(int interation, double Learning_rat, Train* Head, double w[], double* b, int Rank) {
+void Liner(int interation, double Learning_rat, Train* Head, double w[], double* b, int Rank,int count) {
+	char TextName[] = "剩余学习次数";
+	double* n_w = (double*)malloc(sizeof(double) * Rank);
+	double n_b = 9;
+	int is_show = 0;
 
 	for (int i = 0; i < interation; i++) {
-		for (int j = 0; j < Rank; j++) {
-			w[j] -= Learning_rat * J_1(Head, w, *b, j, Rank);
+
+		if (i % 10000 == 0 && i != 0) {
+
+			for (double k = 26; k < 725; k++) {
+				double y = now(k-325, n_w, n_b, Rank)+325;
+				if (y >= 26 && y <= 599) {
+					putpixel(k, y, RGB(234, 234, 234));
+				}
+			}
+			is_show = 1;
+			for (double k = 26; k < 725; k++) {
+				double y = now(k-325, w, *b, Rank)+325;
+				if (y >= 26 && y <= 599) {
+					putpixel(k, y, RED);
+				}
+			}
+
+			n_b = *b;
+			for (int i = 0; i < Rank; i++) {
+				n_w[i] = w[i];
+			}
+
+			char* Text;
+			double_to_string((interation-i-1)/10000, &Text, 0);
+			Inform_show(870, 550, 70, 20, Text,TextName);
 		}
 
-		(*b) -= Learning_rat * J_2(Head, w, *b, Rank);
+		for (int j = 0; j < Rank; j++) {
+			Gradient_descent(Head, w, b, j, Rank,Learning_rat,count);
+		}
 
-		char* Text;
 	}
+
+	Inform_delete(870, 550, 70, 20,TextName);
 }

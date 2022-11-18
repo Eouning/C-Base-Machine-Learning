@@ -13,8 +13,9 @@ Ori:
     char TextName1[] = "学习次数:";
     char TextName3[] = "学习率:";
 
+    int count = 0;//数据集中数据个数
     int Rank = 1;
-    int interation = 10000000;
+    int interation = 1000;
     double Learning_rat =0.01;
     Train* Head=NULL;
 
@@ -71,7 +72,8 @@ Ori:
 
                 if (msg.x >= 25 && msg.x <= 725 && msg.y >= 25 && msg.y <= 600) {
                     fillcircle(msg.x, msg.y, 2);
-                    Train_append(msg.x, msg.y, &Head);
+                    Train_append(msg.x-325, msg.y-325, &Head);
+                    count++;
                 }
                 if (msg.x >= 430 && msg.x <= 630 && msg.y >= 650 && msg.y <= 700) {
                     goto Ori;
@@ -115,15 +117,15 @@ Next:
     }
 
     //线性回归实现
-    Liner(interation, 0.001*Learning_rat, Head, w, &b, Rank);
+    Liner(10000*interation, 0.001*Learning_rat, Head, w, &b,Rank,count);
 
-    char TextName8[] = "w:";
+    char TextName8[] = "b:";
     char* Text8;
-    double_to_string(w[1], &Text8, 5);
+    double_to_string(b, &Text8, 5);
     Text_show(860, 400, 100, 30, Text8, TextName8);
 
     for (double i = 25; i < 725; i++) {
-        double y = now(i, w, b, Rank);
+        double y = now(i-325, w, b, Rank)+325;
         if (y>25 && y <600) {
             putpixel(i, y, RED);
         }
