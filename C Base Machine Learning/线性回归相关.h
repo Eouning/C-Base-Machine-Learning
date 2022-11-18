@@ -61,7 +61,6 @@ void Liner(int interation, double Learning_rat, Train* Head, double w[], double*
 	char TextName[] = " £”‡—ßœ∞¥Œ ˝";
 	double* n_w = (double*)malloc(sizeof(double) * Rank);
 	double n_b = 9;
-	int is_show = 0;
 
 	for (int i = 0; i < interation; i++) {
 
@@ -73,7 +72,7 @@ void Liner(int interation, double Learning_rat, Train* Head, double w[], double*
 					putpixel(k, y, RGB(234, 234, 234));
 				}
 			}
-			is_show = 1;
+
 			for (double k = 26; k < 725; k++) {
 				double y = now(k-325, w, *b, Rank)+325;
 				if (y >= 26 && y <= 599) {
