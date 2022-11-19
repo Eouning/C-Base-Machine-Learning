@@ -18,7 +18,7 @@ Ori:
     int count = 0;//数据集中数据个数
     int Rank = 1;
     int interation = 100000;
-    double Learning_rat =100;
+    double Learning_rat =10;
     Train* Head=NULL;
 
     setlinecolor(BLACK);
@@ -111,13 +111,13 @@ Next:
 
     //初始化w[]与b
     double* w = (double*)malloc(sizeof(double) * Rank);
-    double b = 0;
+    double b = 1;
     for (int i = 0; i < Rank; i++) {
-        w[i] = 0;
+        w[i] = 1;
     }
 
     //线性回归实现
-    Liner(10000*interation, 0.0000001*Learning_rat, Head, w, &b,Rank,count);
+    Liner(10000*interation, 0.000001*Learning_rat, Head, w, &b,Rank,count);
 
     char TextName8[] = "b:";
     char* Text8;
