@@ -145,7 +145,7 @@ Next:
         y_o = y;
     }
 
-    //确保点在线上
+    //确保点在线上方
     Train* p = Head;
     while (p)
     {

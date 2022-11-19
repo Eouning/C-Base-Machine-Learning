@@ -1,5 +1,5 @@
 #include "界面控制组件.h"
-#define LD 10 //正则化系数的百分比
+#define LD 0 //正则化系数的百分比
 
 //训练组的存储形式
 typedef struct _none {
@@ -42,9 +42,10 @@ double now(double x, double w[], double b, int Rank) {
 //梯度下降算法
 void Gradient_descent(Train* Head, double w[], double* b, int Rank,double Learning_rat,int count) {
 	double k=0,Lambda=LD/100*count;
-	Train* p = Head;
+	Train* p ;
 
 	for (int q = 0; q < Rank; q++) {
+		p = Head;
 		k = 0;
 		while (p)
 		{
@@ -54,7 +55,7 @@ void Gradient_descent(Train* Head, double w[], double* b, int Rank,double Learni
 		w[q] -= Learning_rat * (k + Lambda * w[q] / count);
 	}
 
-	k = 0.;
+	k = 0;
 	p = Head;
 	while (p)
 	{
