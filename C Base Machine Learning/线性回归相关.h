@@ -54,7 +54,7 @@ void B_Gradient_descent(Train* Head, double w[], double* b, int Rank,double Lear
 			j += temp *pow(p->X, Rank - q);
 			p = p->Next;
 		}
-		*b -= Learning_rat * k;
+		*b -= Learning_rat * k*10000;
 		w[q] -= Learning_rat * (j + Lambda * w[q] / count);
 	}
 
@@ -71,7 +71,7 @@ void S_Gradient_descent(Train* Head, double w[], double* b, int Rank, double Lea
 			k = (now(p->X, w, *b, Rank) - p->Y);
 			j=k* pow(p->X, Rank - q);
 			p = p->Next;
-			*b -= Learning_rat * k;
+			*b -= Learning_rat * k*10000;
 			w[q] -= Learning_rat * j ;
 		}
 	}
