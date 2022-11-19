@@ -136,7 +136,6 @@ void double_to_string (double d,char**ptext, int decimal)
 {
 
     decimal = decimal < 0 ? 0 : decimal;
-    char* p;
     char dd[20];
     switch (decimal) {
     case 0:

@@ -18,7 +18,7 @@ Ori:
     int count = 0;//数据集中数据个数
     int Rank = 1;
     int interation = 100000;
-    double Learning_rat =1;
+    double Learning_rat =100;
     Train* Head=NULL;
 
     setlinecolor(BLACK);
@@ -55,7 +55,7 @@ Again:
     Text_show(860, 200, 100, 30, Text2, TextName2);
 
     char* Text3;
-    double_to_string(Learning_rat, &Text3, 6);
+    double_to_string(Learning_rat, &Text3, 5);
     Text_show(860, 300, 100, 30, Text3, TextName3);
     
     //循环读入用户鼠标键盘的相关操作
@@ -111,22 +111,22 @@ Next:
 
     //初始化w[]与b
     double* w = (double*)malloc(sizeof(double) * Rank);
-    double b = 9;
+    double b = 0;
     for (int i = 0; i < Rank; i++) {
-        w[i] = 1;
+        w[i] = 0;
     }
 
     //线性回归实现
-    Liner(10000*interation, 0.00001*Learning_rat, Head, w, &b,Rank,count);
+    Liner(10000*interation, 0.0000001*Learning_rat, Head, w, &b,Rank,count);
 
     char TextName8[] = "b:";
     char* Text8;
-    double_to_string(b, &Text8, 5);
+    double_to_string(b, &Text8, 7);
     Text_show(860, 400, 100, 30, Text8, TextName8);
 
     char TextName9[] = "w[最高位]:";
     char* Text9;
-    double_to_string(w[0], &Text9, 5);
+    double_to_string(w[0], &Text9, 7);
     Text_show(860, 450, 100, 30, Text9, TextName9);
 
     setlinecolor(BLUE);

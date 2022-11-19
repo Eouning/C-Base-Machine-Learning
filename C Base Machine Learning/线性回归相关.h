@@ -1,6 +1,5 @@
 #include "界面控制组件.h"
-
-#define Lambda 10//正则化参数
+#define LD 10 //正则化系数的百分比
 
 //训练组的存储形式
 typedef struct _none {
@@ -41,25 +40,35 @@ double now(double x, double w[], double b, int Rank) {
 }
 
 //梯度下降算法
-void Gradient_descent(Train* Head, double w[], double* b, int px, int Rank,double Learning_rat,int count) {
-	double j = 0,k=0;
+void Gradient_descent(Train* Head, double w[], double* b, int Rank,double Learning_rat,int count) {
+	double k=0,Lambda=LD/100*count;
 	Train* p = Head;
 
-	while (p)
-	{
-		double i = (now(p->X, w, *b, Rank) - p->Y)/count;
-		j += i;
-		k += i * pow(p->X, Rank - px);
-		p = p->Next;
+	for (int q = 0; q < Rank; q++) {
+		k = 0;
+		while (p)
+		{
+			k += (now(p->X, w, *b, Rank) - p->Y) / count * pow(p->X, Rank - q);
+			p = p->Next;
+		}
+		w[q] -= Learning_rat * (k + Lambda * w[q] / count);
 	}
 
-	*b-= Learning_rat*j;
-	w[px] -= Learning_rat * (k+Lambda*w[px]/count);
+	k = 0.;
+	p = Head;
+	while (p)
+	{
+		k += (now(p->X, w, *b, Rank) - p->Y) / count ;
+		p = p->Next;
+	}
+	*b-= Learning_rat*k;
 
 }
 
 //线性回归
 void Liner(int interation, double Learning_rat, Train* Head, double w[], double* b, int Rank,int count) {
+
+	double LR_add = Learning_rat / 100;
 
 	ExMessage msg;
 	char TextName[] = "剩余学习次数";
@@ -113,6 +122,22 @@ void Liner(int interation, double Learning_rat, Train* Head, double w[], double*
 				fillcircle(p->X+325, p->Y+325, 2);
 				p = p->Next;
 			}
+
+			if (Learning_rat < LR_add * 10000) {
+				Learning_rat += LR_add;
+			}
+
+			char TextName8[] = "b:";
+			char* Text8;
+			double_to_string(*b, &Text8, 7);
+			Text_show(860, 400, 100, 30, Text8, TextName8);
+			free(Text8);
+
+			char TextName9[] = "w[最高位]:";
+			char* Text9;
+			double_to_string(w[0], &Text9, 7);
+			Text_show(860, 450, 100, 30, Text9, TextName9);
+			free(Text9);
 		}
 		
 		//循环读入用户鼠标键盘的相关操作
@@ -156,9 +181,7 @@ void Liner(int interation, double Learning_rat, Train* Head, double w[], double*
 	GoOn:
 
 		//与阶数相关的循环线性回归
-		for (int j = 0; j < Rank; j++) {
-			Gradient_descent(Head, w, b, j, Rank,Learning_rat,count);
-		}
+		Gradient_descent(Head, w, b,  Rank,Learning_rat,count);
 	}
 
 Next:
