@@ -129,17 +129,27 @@ Next:
     double_to_string(w[0], &Text9, 5);
     Text_show(860, 450, 100, 30, Text9, TextName9);
 
-    for (double i = 25; i < 725; i+=0.1) {
+    setlinecolor(BLUE);
+    double y_o = now(25, w, b, Rank);
+    for (double i = 25.1; i < 725; i+=0.1) {
         double y = now(i-325, w, b, Rank)+325;
         if (y>25 && y <600) {
-            putpixel(i, y, RED);
+            if (y_o > 25 && y_o < 600) {
+                line(i - 0.1, y_o, i, y);
+            }
+            else
+            {
+                line(i, y, i, y);
+            }
         }
+        y_o = y;
     }
 
     //确保点在线上
     Train* p = Head;
     while (p)
     {
+        setlinecolor(BLACK);
         setfillcolor(BLACK);
         fillcircle(p->X + 325, p->Y + 325, 2);
         p = p->Next;

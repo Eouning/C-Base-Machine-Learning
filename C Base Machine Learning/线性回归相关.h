@@ -31,15 +31,10 @@ void Train_append(double x, double y, Train** Head) {
 
 //目前对应的w[],与b计算出的函数值
 double now(double x, double w[], double b, int Rank) {
-	double* num = (double*)malloc(sizeof(double) * Rank);
-	num[0] = x*w[0];
-	double result=num[0];
-
-	for (int i = 1; i < Rank; i++) {
-		num[i] = num[i - 1] / w[i - 1] * w[i]*x;
-		result += num[i];
+	double result = 0;
+	for (int i = 0; i < Rank; i++) {
+		result += w[i] * pow(x, Rank - i);
 	}
-	free(num);
 	return result + b;
 }
 
@@ -107,6 +102,7 @@ void Liner(int interation, double Learning_rat, Train* Head, double w[], double*
 			char* Text;
 			double_to_string((interation-i-1)/10000, &Text, 0);
 			Inform_show(870, 550, 70, 20, Text,TextName);
+			free(Text);
 
 			Train* p = Head;
 			while (p)

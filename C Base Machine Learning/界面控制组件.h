@@ -162,8 +162,9 @@ void double_to_string (double d,char**ptext, int decimal)
         break;
 
     }
-    *ptext = (char*)malloc(strlen(dd));
+    *ptext = (char*)malloc(sizeof(char)*(strlen(dd)+1));
     strcpy(*ptext, dd);
+
 }
 
 //¼ûº¯ÊýÃû
