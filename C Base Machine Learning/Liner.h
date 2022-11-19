@@ -15,10 +15,11 @@ Ori:
     char TextName1[] = "学习次数:";
     char TextName3[] = "学习率:";
 
+    BOOL Is_BGD = true;
     int count = 0;//数据集中数据个数
     int Rank = 1;
     int interation = 100000;
-    double Learning_rat =10;
+    double Learning_rat =1;
     Train* Head=NULL;
 
     setlinecolor(BLACK);
@@ -45,6 +46,9 @@ Again:
 
     char buttonText3[] = "结束进程";
     button(780, 650, 200, 50, buttonText3);
+
+    char buttonText4[] = "SGD";
+    button(260, 650, 50, 50, buttonText4);
 
     char* Text1;
     IntToString(interation, &Text1);
@@ -80,6 +84,12 @@ Again:
                 }
                 if (msg.x >= 50 && msg.x <= 250 && msg.y >= 650 && msg.y <= 700)
                 {
+                    Is_BGD = true;
+                    goto Next;
+                }
+                if (msg.x >= 260 && msg.x <= 310 && msg.y >= 650 && msg.y <= 700)
+                {
+                    Is_BGD = false;
                     goto Next;
                 }
                 if (msg.x >= 780 && msg.x <= 980 && msg.y >= 650 && msg.y <= 700)
@@ -117,16 +127,16 @@ Next:
     }
 
     //线性回归实现
-    Liner(10000*interation, 0.000001*Learning_rat, Head, w, &b,Rank,count);
+    Liner(10000*interation, 0.000001*Learning_rat, Head, w, &b,Rank,count,Is_BGD);
 
     char TextName8[] = "b:";
     char* Text8;
-    double_to_string(b, &Text8, 7);
+    double_to_string(b, &Text8, 4);
     Text_show(860, 400, 100, 30, Text8, TextName8);
 
     char TextName9[] = "w[最高位]:";
     char* Text9;
-    double_to_string(w[0], &Text9, 7);
+    double_to_string(w[0], &Text9, 4);
     Text_show(860, 450, 100, 30, Text9, TextName9);
 
     setlinecolor(BLUE);

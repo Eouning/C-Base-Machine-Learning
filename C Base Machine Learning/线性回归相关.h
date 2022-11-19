@@ -39,8 +39,8 @@ double now(double x, double w[], double b, int Rank) {
 	return result + b;
 }
 
-//梯度下降算法
-void Gradient_descent(Train* Head, double w[], double* b, int Rank,double Learning_rat,int count) {
+//BGD-梯度下降算法
+void B_Gradient_descent(Train* Head, double w[], double* b, int Rank,double Learning_rat,int count) {
 	double k,j,Lambda=LD/100*count;
 
 	for (int q = 0; q < Rank; q++) {
@@ -60,8 +60,26 @@ void Gradient_descent(Train* Head, double w[], double* b, int Rank,double Learni
 
 }
 
+//SGD-梯度下降算法
+void S_Gradient_descent(Train* Head, double w[], double* b, int Rank, double Learning_rat) {
+	double k, j;
+
+	for (int q = 0; q < Rank; q++) {
+		Train* p = Head;
+		while (p)
+		{
+			k = (now(p->X, w, *b, Rank) - p->Y);
+			j=k* pow(p->X, Rank - q);
+			p = p->Next;
+			*b -= Learning_rat * k;
+			w[q] -= Learning_rat * j ;
+		}
+	}
+
+}
+
 //线性回归
-void Liner(int interation, double Learning_rat, Train* Head, double w[], double* b, int Rank,int count) {
+void Liner(int interation, double Learning_rat, Train* Head, double w[], double* b, int Rank,int count,BOOL Is_BGD) {
 
 	double LR_add = Learning_rat / 100;
 
@@ -80,21 +98,30 @@ void Liner(int interation, double Learning_rat, Train* Head, double w[], double*
 	char buttonText3[] = "结束回归";
 	button1(780, 650, 200, 50, buttonText3);
 
+	if (Is_BGD) {
+		button_SGD_OFF(260, 650, 50, 50);
+	}
+	else
+	{
+		char buttonText4[] = "SGD";
+		button_SGD_ON(260, 650, 50, 50, buttonText4);
+	}
+
 	//正式开始回归
 	for (int i = 0; i < interation; i++) {
 
 		//回归过程中的可视化
 		if (i % 10000 == 0 && i != 0) {
 
-			for (double k = 26; k < 725; k+=0.1) {
-				double y = now(k-325, n_w, n_b, Rank)+325;
+			for (double k = 26; k < 725; k += 0.1) {
+				double y = now(k - 325, n_w, n_b, Rank) + 325;
 				if (y >= 26 && y <= 599) {
 					putpixel(k, y, RGB(234, 234, 234));
 				}
 			}
 
-			for (double k = 26; k < 725; k+=0.1) {
-				double y = now(k-325, w, *b, Rank)+325;
+			for (double k = 26; k < 725; k += 0.1) {
+				double y = now(k - 325, w, *b, Rank) + 325;
 				if (y >= 26 && y <= 599) {
 					putpixel(k, y, RED);
 				}
@@ -106,35 +133,35 @@ void Liner(int interation, double Learning_rat, Train* Head, double w[], double*
 			}
 
 			char* Text;
-			double_to_string((interation-i-1)/10000, &Text, 0);
-			Inform_show(870, 550, 70, 20, Text,TextName);
+			double_to_string((interation - i - 1) / 10000, &Text, 0);
+			Inform_show(870, 550, 70, 20, Text, TextName);
 			free(Text);
 
 			Train* p = Head;
 			while (p)
 			{
 				setfillcolor(BLACK);
-				fillcircle(p->X+325, p->Y+325, 2);
+				fillcircle(p->X + 325, p->Y + 325, 2);
 				p = p->Next;
 			}
 
-			if (Learning_rat < LR_add * 5000) {
+			if (Learning_rat < LR_add * 1000) {
 				Learning_rat += LR_add;
 			}
 
 			char TextName8[] = "b:";
 			char* Text8;
-			double_to_string(*b, &Text8, 7);
+			double_to_string(*b, &Text8, 4);
 			Text_show(860, 400, 100, 30, Text8, TextName8);
 			free(Text8);
 
 			char TextName9[] = "w[最高位]:";
 			char* Text9;
-			double_to_string(w[0], &Text9, 7);
+			double_to_string(w[0], &Text9, 4);
 			Text_show(860, 450, 100, 30, Text9, TextName9);
 			free(Text9);
 		}
-		
+
 		//循环读入用户鼠标键盘的相关操作
 		if (peekmessage(&msg, EM_MOUSE)) {
 			switch (msg.message)
@@ -176,7 +203,15 @@ void Liner(int interation, double Learning_rat, Train* Head, double w[], double*
 	GoOn:
 
 		//与阶数相关的循环线性回归
-		Gradient_descent(Head, w, b,  Rank,Learning_rat,count);
+		if (Is_BGD) {
+			//使用BGD梯度下降方法
+			B_Gradient_descent(Head, w, b, Rank, Learning_rat, count);
+		}
+		else {
+			//使用SGD梯度下降方法（随机梯度下降）
+			S_Gradient_descent(Head, w, b, Rank, Learning_rat);
+		}
+		
 	}
 
 Next:

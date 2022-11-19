@@ -39,6 +39,25 @@ void button1(int x, int y, int w, int h, char text[]) {
     double heigh = textheight(text) / 2.0;
     outtextxy(x + 0.5 * w - width, y + 0.5 * h - heigh, text);
 }
+void button_SGD_ON(int x, int y, int w, int h, char text[]) {
+    //生成按钮背景
+    setlinecolor(BLACK);
+    setfillcolor(RED);
+    fillroundrect(x, y, x + w, y + h, 10, 10);
+
+    //居中显示按钮文字
+    settextstyle(25, 0, "黑体");
+    setbkmode(TRANSPARENT);
+    double width = textwidth(text) / 2.0;
+    double heigh = textheight(text) / 2.0;
+    outtextxy(x + 0.5 * w - width, y + 0.5 * h - heigh, text);
+}
+void button_SGD_OFF(int x, int y, int w, int h) {
+    //生成按钮背景
+    setlinecolor(WHITE);
+    setfillcolor(WHITE);
+    fillroundrect(x, y, x + w, y + h, 10, 10);
+}
 
 //输出文本框（不含光标闪烁）
 void Text_show(int x, int y, int w, int h, char text[], char name[]) {
