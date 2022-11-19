@@ -1,5 +1,7 @@
 #include "界面控制组件.h"
 
+#define Lambda 10//正则化参数
+
 //训练组的存储形式
 typedef struct _none {
 	double X;
@@ -52,7 +54,7 @@ void Gradient_descent(Train* Head, double w[], double* b, int px, int Rank,doubl
 	}
 
 	*b-= Learning_rat*j;
-	w[px] -= Learning_rat * k;
+	w[px] -= Learning_rat * (k+Lambda*w[px]/count);
 
 }
 
