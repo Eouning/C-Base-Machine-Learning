@@ -49,4 +49,3 @@ void FileOutput(double w[], double b, int Rank) {
 
     free(FilePosition);
 }
-

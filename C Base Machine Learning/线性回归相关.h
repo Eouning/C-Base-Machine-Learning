@@ -11,6 +11,9 @@ typedef struct _none {
 //训练组的增加
 void Train_append(double x, double y, Train** Head) {
 	Train* p = (Train*)malloc(sizeof(Train));
+	if (p == NULL) {
+		exit(0);
+	}
 	p->X = x;
 	p->Y = y;
 	p->Next = NULL;

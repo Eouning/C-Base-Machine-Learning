@@ -135,6 +135,9 @@ Next:
 
     //≥ı ºªØw[]”Îb
     double* w = (double*)malloc(sizeof(double) * Rank);
+    if (*w == NULL) {
+        exit(0);
+    }
     double b = 1;
     for (int i = 0; i < Rank; i++) {
         w[i] = 1;

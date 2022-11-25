@@ -149,6 +149,9 @@ void IntToString(int x, char** ptext) {
     else
     {
         *ptext = (char*)malloc(sizeof(char) * 2);
+        if (*ptext == NULL) {
+            exit(0);
+        }
         (*ptext)[0] = '0';
         (*ptext)[1] = '\0';
     }
@@ -186,6 +189,9 @@ void double_to_string (double d,char**ptext, int decimal)
 
     }
     *ptext = (char*)malloc(sizeof(char)*(strlen(dd)+1));
+    if (*ptext == NULL) {
+        exit(0);
+    }
     strcpy(*ptext, dd);
 
 }
