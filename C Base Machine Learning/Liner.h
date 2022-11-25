@@ -7,6 +7,9 @@ void Linear_regression_presentaion() {
     initgraph(1024, 768);//背景分辨率
     setbkcolor(WHITE);//背景颜色
 
+    //播放循环背景音乐
+    BGM2();
+
 Ori:
     cleardevice();//清空
 

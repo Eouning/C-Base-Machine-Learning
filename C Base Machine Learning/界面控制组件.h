@@ -515,3 +515,10 @@ void BGM() {
     mciSendString("open ./button.wav alias 01", 0, 0, 0);
     mciSendString("play 01", 0, 0, 0);
 }
+//±≥æ∞“Ù¿÷
+void BGM2() {
+    mciSendString("close 02", NULL, 0, NULL);
+    //¥Úø™“Ù¿÷£¨≤•∑≈“Ù¿÷
+    mciSendString("open ./Back.mp3 alias 02 type MPEGVideo", 0, 0, 0);
+    mciSendString("play 02 repeat", 0, 0, 0);
+}
