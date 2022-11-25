@@ -36,6 +36,9 @@
     <ClInclude Include="线性回归相关.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="文件输出.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C Base Machine Learning.cpp">

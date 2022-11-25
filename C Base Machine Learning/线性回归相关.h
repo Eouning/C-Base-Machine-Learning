@@ -167,7 +167,9 @@ void Liner(int interation, double Learning_rat, Train* Head, double w[], double*
 			switch (msg.message)
 			{
 			case WM_LBUTTONDOWN:
+				//暂停按钮
 				if (msg.x >= 430 && msg.x <= 630 && msg.y >= 650 && msg.y <= 700) {
+					BGM();
 					while (true)
 					{
 						ExMessage msg;
@@ -175,12 +177,16 @@ void Liner(int interation, double Learning_rat, Train* Head, double w[], double*
 							switch (msg.message)
 							{
 							case WM_LBUTTONDOWN:
+								//继续按钮
 								if (msg.x >= 50 && msg.x <= 250 && msg.y >= 650 && msg.y <= 700)
 								{
+									BGM();
 									goto GoOn;
 								}
+								//结束线性回归按钮
 								if (msg.x >= 780 && msg.x <= 980 && msg.y >= 650 && msg.y <= 700)
 								{
+									BGM();
 									goto Next;
 								}
 								break;
@@ -190,8 +196,11 @@ void Liner(int interation, double Learning_rat, Train* Head, double w[], double*
 						}
 					}
 				}
+
+				//线性回归结束按钮
 				if (msg.x >= 780 && msg.x <= 980 && msg.y >= 650 && msg.y <= 700)
 				{
+					BGM();
 					goto Next;
 				}
 				break;

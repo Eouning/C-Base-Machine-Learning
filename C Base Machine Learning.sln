@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.32929.386
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C Base Machine Learning", "C Base Machine Learning\C Base Machine Learning.vcxproj", "{A474313D-448F-4EE9-99A5-40C4B972A01E}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "机器学习中的线性回归算法", "机器学习中的线性回归算法\机器学习中的线性回归算法.vdproj", "{C4094D35-31D0-4C19-82DA-5929E418310C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,10 @@ Global
 		{A474313D-448F-4EE9-99A5-40C4B972A01E}.Release|x64.Build.0 = Release|x64
 		{A474313D-448F-4EE9-99A5-40C4B972A01E}.Release|x86.ActiveCfg = Release|Win32
 		{A474313D-448F-4EE9-99A5-40C4B972A01E}.Release|x86.Build.0 = Release|Win32
+		{C4094D35-31D0-4C19-82DA-5929E418310C}.Debug|x64.ActiveCfg = Debug
+		{C4094D35-31D0-4C19-82DA-5929E418310C}.Debug|x86.ActiveCfg = Debug
+		{C4094D35-31D0-4C19-82DA-5929E418310C}.Release|x64.ActiveCfg = Release
+		{C4094D35-31D0-4C19-82DA-5929E418310C}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

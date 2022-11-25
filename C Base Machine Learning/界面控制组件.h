@@ -11,8 +11,13 @@
 #include <conio.h>
 #include <mmsystem.h>
 #pragma comment(lib,"winmm.lib")
+#include <io.h>
+#include <direct.h>
+
+void BGM();
 
 //生成按钮。分别输入按钮左上角的坐标，长宽，和储存按钮上文字的字符数组。
+//以下为四种类型的按钮，分别用于不同场合
 void button(int x, int y, int w, int h, char text[]) {
     //生成按钮背景
     setlinecolor(BLACK);
@@ -500,4 +505,13 @@ void Text_Box_for_double(int x, int y, int w, int h, char name[], double* num) {
 
         }
     }
+}
+
+//按钮按下音效
+void BGM() {
+    mciSendString("close 01", NULL, 0, NULL);
+
+    //打开音乐，播放音乐
+    mciSendString("open ./button.wav alias 01", 0, 0, 0);
+    mciSendString("play 01", 0, 0, 0);
 }

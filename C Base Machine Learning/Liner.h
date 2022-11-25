@@ -1,4 +1,4 @@
-#include "线性回归相关.h"
+#include "文件输出.h"
 
 //线性回归演示界面
 void Linear_regression_presentaion() {
@@ -74,26 +74,37 @@ Again:
             {
             case WM_LBUTTONDOWN:
 
+                //打点后训练集增长
                 if (msg.x >= 25 && msg.x <= 725 && msg.y >= 25 && msg.y <= 600) {
                     fillcircle(msg.x, msg.y, 2);
                     Train_append(msg.x-325, msg.y-325, &Head);
                     count++;
                 }
+                //初始化按钮
                 if (msg.x >= 430 && msg.x <= 630 && msg.y >= 650 && msg.y <= 700) {
+                    BGM();
                     goto Ori;
                 }
+                //基于BGD算法的线性回归开始按钮
                 if (msg.x >= 50 && msg.x <= 250 && msg.y >= 650 && msg.y <= 700)
                 {
+                    BGM();
                     Is_BGD = true;
                     goto Next;
                 }
+                //基于SGD算法的线性回归开始按钮
                 if (msg.x >= 260 && msg.x <= 310 && msg.y >= 650 && msg.y <= 700)
                 {
+                    BGM();
                     Is_BGD = false;
                     goto Next;
                 }
+                //退出游戏按钮
                 if (msg.x >= 780 && msg.x <= 980 && msg.y >= 650 && msg.y <= 700)
                 {
+                    closegraph();
+                    BGM();
+                    Sleep(2000);
                     exit(0);
                 }
                 if (msg.x >= 860 && msg.x <= 960 && msg.y >= 100 && msg.y <= 130)
@@ -164,6 +175,8 @@ Next:
         fillcircle(p->X + 325, p->Y + 325, 2);
         p = p->Next;
     }
+
+    FileOutput(w, b, Rank);
 
     free(w);
 
