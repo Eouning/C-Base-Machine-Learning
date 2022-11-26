@@ -15,6 +15,7 @@
 #include <direct.h>
 
 void BGM();
+void Error();
 
 //生成按钮。分别输入按钮左上角的坐标，长宽，和储存按钮上文字的字符数组。
 //以下为四种类型的按钮，分别用于不同场合
@@ -148,10 +149,11 @@ void IntToString(int x, char** ptext) {
     }
     else
     {
-        *ptext = (char*)malloc(sizeof(char) * 2);
-        if (*ptext == NULL) {
+        char* p = (char*)malloc(sizeof(char) * 2);
+        if (p == NULL) {
             exit(0);
         }
+        *ptext = p;
         (*ptext)[0] = '0';
         (*ptext)[1] = '\0';
     }
@@ -159,41 +161,49 @@ void IntToString(int x, char** ptext) {
 }
 //将Double型数据转化为字符串
 
-void double_to_string (double d,char**ptext, int decimal)
+int double_to_string (double d,char**ptext, int decimal)
 {
-
-    decimal = decimal < 0 ? 0 : decimal;
-    char dd[20];
-    switch (decimal) {
-    case 0:
-        sprintf(dd, "%.0lf", d);
-        break;
-    case 1:
-        sprintf(dd, "%.1lf", d);
-        break;
-    case 2:
-        sprintf(dd, "%.2lf", d);
-        break;
-    case 3:
-        sprintf(dd, "%.3lf", d);
-        break;
-    case 4:
-        sprintf(dd, "%.4lf", d);
-        break;
-    case 5:
-        sprintf(dd, "%.5lf", d);
-        break;
-    default:
-        sprintf(dd, "%.6lf", d);
-        break;
-
+    if (d > 10000000 || d<-10000000) {
+        Error();
+        return 1;
     }
-    *ptext = (char*)malloc(sizeof(char)*(strlen(dd)+1));
-    if (*ptext == NULL) {
-        exit(0);
-    }
-    strcpy(*ptext, dd);
+    else
+    {
+        decimal = decimal < 0 ? 0 : decimal;
+        char dd[20];
+        switch (decimal) {
+        case 0:
+            sprintf(dd, "%.0lf", d);
+            break;
+        case 1:
+            sprintf(dd, "%.1lf", d);
+            break;
+        case 2:
+            sprintf(dd, "%.2lf", d);
+            break;
+        case 3:
+            sprintf(dd, "%.3lf", d);
+            break;
+        case 4:
+            sprintf(dd, "%.4lf", d);
+            break;
+        case 5:
+            sprintf(dd, "%.5lf", d);
+            break;
+        default:
+            sprintf(dd, "%.6lf", d);
+            break;
 
+        }
+        char* p = (char*)malloc(sizeof(char) * (strlen(dd) + 1));
+        if (p == NULL) {
+            exit(0);
+        }
+        *ptext = p;
+        strcpy(*ptext, dd);
+
+        return 0;
+    }
 }
 
 //见函数名
@@ -527,4 +537,52 @@ void BGM2() {
     //打开音乐，播放音乐
     mciSendString("open ./Back.mp3 alias 02 type MPEGVideo", 0, 0, 0);
     mciSendString("play 02 repeat", 0, 0, 0);
+}
+
+void Error() {
+    closegraph();
+    
+    //错误提示窗口
+    initgraph(400,300);//背景分辨率
+    setbkcolor(WHITE);//背景颜色
+
+    cleardevice();//清空
+
+    char text1[] = "出错了！";
+    char text2[] = "可能是学习率太大导致的参数越界。";
+    char text3[] = "请按下下方按钮初始化后重试！";
+    settextcolor(BLACK);
+    settextstyle(15, 0, "黑体");
+    setbkmode(TRANSPARENT);
+    outtextxy(150, 50, text1);
+    outtextxy(70, 90, text2);
+    outtextxy(85, 130, text3);
+
+    char buttonText[] = "初始化程序";
+    button(120, 200, 150, 50, buttonText);
+
+    while (true)
+    {
+        ExMessage msg;
+        setlinecolor(BLACK);
+        setfillcolor(BLACK);
+
+        if (peekmessage(&msg, EM_MOUSE)) {
+            switch (msg.message)
+            {
+            case WM_LBUTTONDOWN:
+
+                //打点后训练集增长
+                if (msg.x >= 120 && msg.x <= 270 && msg.y >=200 && msg.y <= 250) {
+                    goto Next;
+                }
+            default:
+                break;
+            }
+        }
+    }
+
+Next:
+
+    closegraph();
 }

@@ -30,7 +30,19 @@ void Train_append(double x, double y, Train** Head) {
 		}
 		ph->Next = p;
 	}
+}
 
+//训练组的清空
+void Train_free(Train* Head) {
+	Train* p;
+	if (Head != NULL) {
+		while (Head->Next)
+		{
+			p = Head->Next;
+			Head->Next = p->Next;
+			free(p);
+		}
+	}
 }
 
 //目前对应的w[],与b计算出的函数值
@@ -81,8 +93,7 @@ void S_Gradient_descent(Train* Head, double w[], double* b, int Rank, double Lea
 
 }
 
-//线性回归
-void Liner(int interation, double Learning_rat, Train* Head, double w[], double* b, int Rank,int count,BOOL Is_BGD) {
+int Liner(int interation, double Learning_rat, Train* Head, double w[], double* b, int Rank,int count,BOOL Is_BGD) {
 
 	double LR_add = Learning_rat / 100;
 
@@ -154,13 +165,17 @@ void Liner(int interation, double Learning_rat, Train* Head, double w[], double*
 
 			char TextName8[] = "b:";
 			char* Text8;
-			double_to_string(*b, &Text8, 4);
+			if (double_to_string(*b, &Text8, 4)) {
+				return 1;
+			}
 			Text_show(860, 400, 100, 30, Text8, TextName8);
 			free(Text8);
 
 			char TextName9[] = "w[最高位]:";
 			char* Text9;
-			double_to_string(w[0], &Text9, 4);
+			if (double_to_string(w[0], &Text9, 4)) {
+				return 1;
+			}
 			Text_show(860, 450, 100, 30, Text9, TextName9);
 			free(Text9);
 		}
@@ -229,5 +244,6 @@ void Liner(int interation, double Learning_rat, Train* Head, double w[], double*
 Next:
 
 	Inform_delete(870, 550, 70, 20,TextName);
+	return 0;
 
 }

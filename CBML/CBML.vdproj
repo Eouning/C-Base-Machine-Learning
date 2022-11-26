@@ -15,109 +15,157 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_117DDD0079E141318DD7129ACFD1FD23"
+        "MsmKey" = "8:_032E8A0737D644AB8E0AD70211F7ECCE"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_20552DAECD964A549E08BE5B5D4D48F7"
+        "MsmKey" = "8:_0F3CF0A0315C5C56E71D01E1FF90946A"
+        "OwnerKey" = "8:_52550A74912442FF9758821E818BA3CB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1D6A05BE9F4F91E825943F507781A19D"
+        "OwnerKey" = "8:_52550A74912442FF9758821E818BA3CB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_200290093FD44A06BA2E2F406F3344A6"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_330549A2FC194CDAB878D7B66C0EDABA"
+        "MsmKey" = "8:_33DC186BA276478B9E9114586698FE92"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_3F1389D2E68A49F4B6200B76009304EF"
+        "MsmKey" = "8:_40AD6AC0D9864F6C97661569A8D065F8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_5079543872114E569CCD1C6462369CB6"
+        "MsmKey" = "8:_52550A74912442FF9758821E818BA3CB"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_518B91979F8C4E94835EDA572A14D6C6"
+        "MsmKey" = "8:_53482C86BA3C4D1F97BF8F91A9462920"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_6DDCE56A21AD49AC8F41E877EA59B451"
+        "MsmKey" = "8:_5BE3432BD5AD41549627347E146DEF80"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_70CCAC87F174499294E53D7EC79AEA13"
+        "MsmKey" = "8:_66373CF0C20441F899C81B06BC3001E0"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_7483308B52244745A2B0B6B194B23E7D"
+        "MsmKey" = "8:_77E87B64A1D793F7F3A2C272C403A6BA"
+        "OwnerKey" = "8:_52550A74912442FF9758821E818BA3CB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7D7CA79747ABAEA63FC089FFA01CDA85"
+        "OwnerKey" = "8:_52550A74912442FF9758821E818BA3CB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8EFD00C93F7D40A59DFCB47554AFA051"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_8B1BB2F9E88846CD82F57D1BC83046A0"
+        "MsmKey" = "8:_91E59B65934E45979611735A5D246548"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_8EE6D82BBE25439A9B83625C4753EAB9"
+        "MsmKey" = "8:_92F0EA67D2B34BB9A39F6A30AF2BADDE"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_9BB7B1DA2465416EA644889051060BD7"
+        "MsmKey" = "8:_940C1D59D02F353762948C28B0D03B3F"
+        "OwnerKey" = "8:_52550A74912442FF9758821E818BA3CB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_954A11999738C1E60F3FA82CE0CDEF5E"
+        "OwnerKey" = "8:_52550A74912442FF9758821E818BA3CB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_975F4C5EA9F04D2DB176C6822505A1CD"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_A80B368247D140F8A576651C3A0B4A00"
+        "MsmKey" = "8:_B5FB0FE9CC6B3330929B92B2CC3EAFB3"
+        "OwnerKey" = "8:_52550A74912442FF9758821E818BA3CB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E19F7007324110623E7CE8F87B1F2098"
+        "OwnerKey" = "8:_52550A74912442FF9758821E818BA3CB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E6CCED7D532C49A7A020170B19CAC61B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_AE27D4EFCF0C4F28BD136ADD9D78E3B8"
+        "MsmKey" = "8:_E889D1BACDC44CFA97129E9373BB149B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_B5C9EF7E6C644BFCAB1E390D59027551"
+        "MsmKey" = "8:_EC7D8AA2A3B74D19B94B4844D6DB7C57"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_B91B7741B58D41C5BC596F0A89698CBB"
+        "MsmKey" = "8:_F4AEBABB75404C20B04B3937BD8E96C8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_D4B3B477627D407BAC1BEE23CCAC08DD"
+        "MsmKey" = "8:_FA98A8AAA8614435825A9253EE41A68F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_E2F5805DF57A440FBC3D50FA9E1FD6C5"
+        "MsmKey" = "8:_FC33ABDAA25F400A82C067E092CC1BC9"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -176,192 +224,12 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_117DDD0079E141318DD7129ACFD1FD23"
-            {
-            "SourcePath" = "8:..\\C Base Machine Learning\\C Base Machine Learning.rc"
-            "TargetName" = "8:C Base Machine Learning.rc"
-            "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_20552DAECD964A549E08BE5B5D4D48F7"
-            {
-            "SourcePath" = "8:..\\C Base Machine Learning\\Resource.h"
-            "TargetName" = "8:Resource.h"
-            "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_330549A2FC194CDAB878D7B66C0EDABA"
-            {
-            "SourcePath" = "8:..\\C Base Machine Learning\\界面控制组件.h"
-            "TargetName" = "8:界面控制组件.h"
-            "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3F1389D2E68A49F4B6200B76009304EF"
-            {
-            "SourcePath" = "8:..\\C Base Machine Learning\\C Base Machine Learning.cpp"
-            "TargetName" = "8:C Base Machine Learning.cpp"
-            "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5079543872114E569CCD1C6462369CB6"
-            {
-            "SourcePath" = "8:..\\C Base Machine Learning\\C Base Machine Learning.h"
-            "TargetName" = "8:C Base Machine Learning.h"
-            "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_518B91979F8C4E94835EDA572A14D6C6"
-            {
-            "SourcePath" = "8:..\\C Base Machine Learning\\C Base Machine Learning.vcxproj.filters"
-            "TargetName" = "8:C Base Machine Learning.vcxproj.filters"
-            "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6DDCE56A21AD49AC8F41E877EA59B451"
-            {
-            "SourcePath" = "8:..\\C Base Machine Learning\\C Base Machine Learning.vcxproj.user"
-            "TargetName" = "8:C Base Machine Learning.vcxproj.user"
-            "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_70CCAC87F174499294E53D7EC79AEA13"
-            {
-            "SourcePath" = "8:..\\C Base Machine Learning\\C Base Machine Learning.ico"
-            "TargetName" = "8:C Base Machine Learning.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7483308B52244745A2B0B6B194B23E7D"
-            {
-            "SourcePath" = "8:..\\C Base Machine Learning\\framework.h"
-            "TargetName" = "8:framework.h"
-            "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8B1BB2F9E88846CD82F57D1BC83046A0"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_032E8A0737D644AB8E0AD70211F7ECCE"
             {
             "SourcePath" = "8:..\\C Base Machine Learning\\button.wav"
             "TargetName" = "8:button.wav"
             "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -376,12 +244,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8EE6D82BBE25439A9B83625C4753EAB9"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0F3CF0A0315C5C56E71D01E1FF90946A"
             {
-            "SourcePath" = "8:..\\C Base Machine Learning\\targetver.h"
-            "TargetName" = "8:targetver.h"
+            "SourcePath" = "8:api-ms-win-crt-runtime-l1-1-0.dll"
+            "TargetName" = "8:api-ms-win-crt-runtime-l1-1-0.dll"
             "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -393,15 +261,15 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9BB7B1DA2465416EA644889051060BD7"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1D6A05BE9F4F91E825943F507781A19D"
             {
-            "SourcePath" = "8:..\\C Base Machine Learning\\C Base Machine Learning.vcxproj"
-            "TargetName" = "8:C Base Machine Learning.vcxproj"
+            "SourcePath" = "8:api-ms-win-crt-stdio-l1-1-0.dll"
+            "TargetName" = "8:api-ms-win-crt-stdio-l1-1-0.dll"
             "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -413,15 +281,15 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A80B368247D140F8A576651C3A0B4A00"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_200290093FD44A06BA2E2F406F3344A6"
             {
             "SourcePath" = "8:..\\C Base Machine Learning\\Back.mp3"
             "TargetName" = "8:Back.mp3"
             "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -436,12 +304,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AE27D4EFCF0C4F28BD136ADD9D78E3B8"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_33DC186BA276478B9E9114586698FE92"
             {
             "SourcePath" = "8:..\\C Base Machine Learning\\small.ico"
             "TargetName" = "8:small.ico"
             "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -456,12 +324,32 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B5C9EF7E6C644BFCAB1E390D59027551"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_40AD6AC0D9864F6C97661569A8D065F8"
+            {
+            "SourcePath" = "8:..\\C Base Machine Learning\\C Base Machine Learning.ico"
+            "TargetName" = "8:C Base Machine Learning.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_53482C86BA3C4D1F97BF8F91A9462920"
             {
             "SourcePath" = "8:..\\C Base Machine Learning\\Liner.h"
             "TargetName" = "8:Liner.h"
             "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -476,12 +364,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B91B7741B58D41C5BC596F0A89698CBB"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5BE3432BD5AD41549627347E146DEF80"
             {
             "SourcePath" = "8:..\\C Base Machine Learning\\文件输出.h"
             "TargetName" = "8:文件输出.h"
             "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -496,12 +384,332 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E2F5805DF57A440FBC3D50FA9E1FD6C5"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_66373CF0C20441F899C81B06BC3001E0"
+            {
+            "SourcePath" = "8:..\\C Base Machine Learning\\C Base Machine Learning.h"
+            "TargetName" = "8:C Base Machine Learning.h"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_77E87B64A1D793F7F3A2C272C403A6BA"
+            {
+            "SourcePath" = "8:api-ms-win-crt-math-l1-1-0.dll"
+            "TargetName" = "8:api-ms-win-crt-math-l1-1-0.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7D7CA79747ABAEA63FC089FFA01CDA85"
+            {
+            "SourcePath" = "8:api-ms-win-crt-locale-l1-1-0.dll"
+            "TargetName" = "8:api-ms-win-crt-locale-l1-1-0.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8EFD00C93F7D40A59DFCB47554AFA051"
+            {
+            "SourcePath" = "8:..\\C Base Machine Learning\\C Base Machine Learning.vcxproj"
+            "TargetName" = "8:C Base Machine Learning.vcxproj"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_91E59B65934E45979611735A5D246548"
+            {
+            "SourcePath" = "8:..\\C Base Machine Learning\\framework.h"
+            "TargetName" = "8:framework.h"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_92F0EA67D2B34BB9A39F6A30AF2BADDE"
             {
             "SourcePath" = "8:..\\C Base Machine Learning\\线性回归相关.h"
             "TargetName" = "8:线性回归相关.h"
             "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_940C1D59D02F353762948C28B0D03B3F"
+            {
+            "SourcePath" = "8:VCRUNTIME140.dll"
+            "TargetName" = "8:VCRUNTIME140.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_954A11999738C1E60F3FA82CE0CDEF5E"
+            {
+            "SourcePath" = "8:api-ms-win-crt-heap-l1-1-0.dll"
+            "TargetName" = "8:api-ms-win-crt-heap-l1-1-0.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_975F4C5EA9F04D2DB176C6822505A1CD"
+            {
+            "SourcePath" = "8:..\\C Base Machine Learning\\C Base Machine Learning.vcxproj.filters"
+            "TargetName" = "8:C Base Machine Learning.vcxproj.filters"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B5FB0FE9CC6B3330929B92B2CC3EAFB3"
+            {
+            "SourcePath" = "8:api-ms-win-crt-filesystem-l1-1-0.dll"
+            "TargetName" = "8:api-ms-win-crt-filesystem-l1-1-0.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E19F7007324110623E7CE8F87B1F2098"
+            {
+            "SourcePath" = "8:api-ms-win-crt-multibyte-l1-1-0.dll"
+            "TargetName" = "8:api-ms-win-crt-multibyte-l1-1-0.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E6CCED7D532C49A7A020170B19CAC61B"
+            {
+            "SourcePath" = "8:..\\C Base Machine Learning\\C Base Machine Learning.cpp"
+            "TargetName" = "8:C Base Machine Learning.cpp"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E889D1BACDC44CFA97129E9373BB149B"
+            {
+            "SourcePath" = "8:..\\C Base Machine Learning\\C Base Machine Learning.rc"
+            "TargetName" = "8:C Base Machine Learning.rc"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EC7D8AA2A3B74D19B94B4844D6DB7C57"
+            {
+            "SourcePath" = "8:..\\C Base Machine Learning\\C Base Machine Learning.vcxproj.user"
+            "TargetName" = "8:C Base Machine Learning.vcxproj.user"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F4AEBABB75404C20B04B3937BD8E96C8"
+            {
+            "SourcePath" = "8:..\\C Base Machine Learning\\界面控制组件.h"
+            "TargetName" = "8:界面控制组件.h"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FA98A8AAA8614435825A9253EE41A68F"
+            {
+            "SourcePath" = "8:..\\C Base Machine Learning\\Resource.h"
+            "TargetName" = "8:Resource.h"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FC33ABDAA25F400A82C067E092CC1BC9"
+            {
+            "SourcePath" = "8:..\\C Base Machine Learning\\targetver.h"
+            "TargetName" = "8:targetver.h"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -522,7 +730,18 @@
         }
         "Folder"
         {
-            "{3C67513D-01DD-4637-8A68-80971EB9504F}:_1C60767D0FE44F10A23FCA565EBE488D"
+            "{1525181F-901A-416C-8A58-119130FE478E}:_1053CF17D9D341E8B0DD725F38A8D236"
+            {
+            "Name" = "8:#1916"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:DesktopFolder"
+                "Folders"
+                {
+                }
+            }
+            "{3C67513D-01DD-4637-8A68-80971EB9504F}:_2BAEFA3A071C4FE59CFFC0A7015D4165"
             {
             "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
@@ -534,18 +753,7 @@
                 {
                 }
             }
-            "{1525181F-901A-416C-8A58-119130FE478E}:_D2E336664C244A579D2A271AF40E2E0C"
-            {
-            "Name" = "8:#1916"
-            "AlwaysCreate" = "11:FALSE"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Property" = "8:DesktopFolder"
-                "Folders"
-                {
-                }
-            }
-            "{1525181F-901A-416C-8A58-119130FE478E}:_E7958F55B10D49ECB5E6034E368426E9"
+            "{1525181F-901A-416C-8A58-119130FE478E}:_6F4498E86A9446C89E00B6967172C40B"
             {
             "Name" = "8:#1919"
             "AlwaysCreate" = "11:FALSE"
@@ -572,9 +780,9 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:CBML"
-        "ProductCode" = "8:{958A6913-AF2E-4AEA-9ECD-7542E5BA983F}"
-        "PackageCode" = "8:{F06C65A3-A027-4B44-8951-29A4D2A833AF}"
-        "UpgradeCode" = "8:{BD414E23-B9B0-4F11-BD0A-6687887BF27D}"
+        "ProductCode" = "8:{CEA82F42-3996-49ED-853F-E8A023805B51}"
+        "PackageCode" = "8:{83D528BB-7A4C-42A4-A20A-717C913E0466}"
+        "UpgradeCode" = "8:{FCA10060-DA96-49A1-8416-E1935E6A336C}"
         "AspNetVersion" = "8:1.1.4322.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
@@ -605,7 +813,7 @@
             {
                 "Keys"
                 {
-                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_D271B05094A843839D98868933EFB40F"
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_4EB41F0FEA9E4A36B0F8A704835FDF43"
                     {
                     "Name" = "8:Software"
                     "Condition" = "8:"
@@ -614,7 +822,7 @@
                     "Transitive" = "11:FALSE"
                         "Keys"
                         {
-                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_7037DE050A334203A2E1156E369B6148"
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_680B560C16CF4B33A83A5AE62F937BA3"
                             {
                             "Name" = "8:[Manufacturer]"
                             "Condition" = "8:"
@@ -639,7 +847,7 @@
             {
                 "Keys"
                 {
-                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_C4A1CF50CD114CE39143C210622A63BC"
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_15A3B579EA2B49CFA69F82439EA07E42"
                     {
                     "Name" = "8:Software"
                     "Condition" = "8:"
@@ -648,7 +856,7 @@
                     "Transitive" = "11:FALSE"
                         "Keys"
                         {
-                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_9E9DDFFE182B40799913627D4D1F338E"
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_013604EA83B541DDBF6E4A2A5EB98A4D"
                             {
                             "Name" = "8:[Manufacturer]"
                             "Condition" = "8:"
@@ -693,7 +901,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_720EA318576545299A09836D421946B7"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_4ED942FF322B4683987277A17C10BA74"
             {
             "Name" = "8:CBML"
             "Arguments" = "8:"
@@ -701,74 +909,29 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_D4B3B477627D407BAC1BEE23CCAC08DD"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
-            "WorkingFolder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
-            "Icon" = "8:"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_774BCBB932DA4703AB54932EC2C03EC9"
-            {
-            "Name" = "8:CBML"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_D4B3B477627D407BAC1BEE23CCAC08DD"
-            "Folder" = "8:_D2E336664C244A579D2A271AF40E2E0C"
-            "WorkingFolder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
+            "Target" = "8:_52550A74912442FF9758821E818BA3CB"
+            "Folder" = "8:_1053CF17D9D341E8B0DD725F38A8D236"
+            "WorkingFolder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
             "Icon" = "8:"
             "Feature" = "8:"
             }
         }
         "UserInterface"
         {
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_40BB56E3E0674D9AB28A44992D62FE7E"
-            {
-            "Name" = "8:#1902"
-            "Sequence" = "3:2"
-            "Attributes" = "3:3"
-                "Dialogs"
-                {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_3043B3E44D9B4F19A85D1B8C38F0DE31"
-                    {
-                    "Sequence" = "3:100"
-                    "DisplayName" = "8:已完成"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFinishedDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
-                }
-            }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_4EAE7B7929864EDDBFFDC0DE0CA6FE67"
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_491CAFD0A6CB4A3DAEB8A1D40C936006"
             {
             "Name" = "8:#1901"
-            "Sequence" = "3:1"
+            "Sequence" = "3:2"
             "Attributes" = "3:2"
                 "Dialogs"
                 {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_3FEAD913D5964657A1E66BC4AAD7BF75"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_6525A0ABC0EC4461812782ECBAED3088"
                     {
                     "Sequence" = "3:100"
                     "DisplayName" = "8:进度"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminProgressDlg.wid"
                         "Properties"
                         {
                             "BannerBitmap"
@@ -799,14 +962,70 @@
                     }
                 }
             }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_5CB20266A6AC4764BBFBEE9F5B92D89B"
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_4B7039AC75474F4EAFB8597677A6C242"
+            {
+            "UseDynamicProperties" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:<VsdDialogDir>\\VsdBasicDialogs.wim"
+            }
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_93A4E471759846679374F43A3433A688"
+            {
+            "UseDynamicProperties" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:<VsdDialogDir>\\VsdUserInterface.wim"
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_9AE44AAB39D74F018145D766AEA8FDAF"
+            {
+            "Name" = "8:#1902"
+            "Sequence" = "3:1"
+            "Attributes" = "3:3"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_E4480BC828AB4320983D7C7BD7E103D0"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:已完成"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdFinishedDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "UpdateText"
+                            {
+                            "Name" = "8:UpdateText"
+                            "DisplayName" = "8:#1058"
+                            "Description" = "8:#1158"
+                            "Type" = "3:15"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1258"
+                            "DefaultValue" = "8:#1258"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_C34FEB4ED17449C4B14FF20A6349AAFE"
             {
             "Name" = "8:#1900"
             "Sequence" = "3:2"
             "Attributes" = "3:1"
                 "Dialogs"
                 {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_2DA931D8BFE14A91B1F9B410E510288A"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_88FC8D09AB074E9D9E9F7DAE32A57AA5"
                     {
                     "Sequence" = "3:200"
                     "DisplayName" = "8:安装文件夹"
@@ -828,7 +1047,29 @@
                             }
                         }
                     }
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_4AEAA5031B824880A662704D7DAA7C20"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_89578D0DEB7B40FD8398AE351085298F"
+                    {
+                    "Sequence" = "3:300"
+                    "DisplayName" = "8:确认安装"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminConfirmDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_A3F60CAC62484B54BA5CF28DBDC29F54"
                     {
                     "Sequence" = "3:100"
                     "DisplayName" = "8:欢迎使用"
@@ -876,138 +1117,38 @@
                             }
                         }
                     }
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_F6FE8821D4FE48099ADE0CC09E8F0699"
-                    {
-                    "Sequence" = "3:300"
-                    "DisplayName" = "8:确认安装"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminConfirmDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
                 }
             }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_6DEE8515522E4016BB3B83FBBB1679C5"
-            {
-            "Name" = "8:#1901"
-            "Sequence" = "3:2"
-            "Attributes" = "3:2"
-                "Dialogs"
-                {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_9C5ED261F96844F3822F1C56D29F3C87"
-                    {
-                    "Sequence" = "3:100"
-                    "DisplayName" = "8:进度"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminProgressDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                            "ShowProgress"
-                            {
-                            "Name" = "8:ShowProgress"
-                            "DisplayName" = "8:#1009"
-                            "Description" = "8:#1109"
-                            "Type" = "3:5"
-                            "ContextData" = "8:1;True=1;False=0"
-                            "Attributes" = "3:0"
-                            "Setting" = "3:0"
-                            "Value" = "3:1"
-                            "DefaultValue" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
-                }
-            }
-            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_9FE005BCFA3B4FCAAADE83F29E0B2032"
-            {
-            "UseDynamicProperties" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "SourcePath" = "8:<VsdDialogDir>\\VsdBasicDialogs.wim"
-            }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_B40BDEA70A73470C9B5F710C305AA648"
-            {
-            "Name" = "8:#1902"
-            "Sequence" = "3:1"
-            "Attributes" = "3:3"
-                "Dialogs"
-                {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_87FC2A1E26104045B1B82DDFA10E6CF1"
-                    {
-                    "Sequence" = "3:100"
-                    "DisplayName" = "8:已完成"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdFinishedDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                            "UpdateText"
-                            {
-                            "Name" = "8:UpdateText"
-                            "DisplayName" = "8:#1058"
-                            "Description" = "8:#1158"
-                            "Type" = "3:15"
-                            "ContextData" = "8:"
-                            "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1258"
-                            "DefaultValue" = "8:#1258"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
-                }
-            }
-            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_C3D36C1C2CC448FD8E90A54CE5839EC1"
-            {
-            "UseDynamicProperties" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "SourcePath" = "8:<VsdDialogDir>\\VsdUserInterface.wim"
-            }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_D70FF7A4DDD049D7994F3F9BAC36BC73"
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_CFA7E5E19D1C48A6A63360DBADD9AEE1"
             {
             "Name" = "8:#1900"
             "Sequence" = "3:1"
             "Attributes" = "3:1"
                 "Dialogs"
                 {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_416DB454D5844A848243C28E71E8D3F7"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_504CA23DB6E44148A4CA28DD514B567B"
+                    {
+                    "Sequence" = "3:300"
+                    "DisplayName" = "8:确认安装"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_B98CA669E7CD443DBC99B0066F92F850"
                     {
                     "Sequence" = "3:200"
                     "DisplayName" = "8:安装文件夹"
@@ -1042,29 +1183,7 @@
                             }
                         }
                     }
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_78BB1C951F71404D8F27E90AFC4A17A6"
-                    {
-                    "Sequence" = "3:300"
-                    "DisplayName" = "8:确认安装"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_D7225393053F4E0F9F35F1224B16D589"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_E1FAAEC889794639BC51934E9820A455"
                     {
                     "Sequence" = "3:100"
                     "DisplayName" = "8:欢迎使用"
@@ -1114,18 +1233,93 @@
                     }
                 }
             }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_E3F1EA69B95747B283B0D8839A14AE8C"
+            {
+            "Name" = "8:#1901"
+            "Sequence" = "3:1"
+            "Attributes" = "3:2"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_688800285D5142CA8BB8CFD0CAC5A056"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:进度"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "ShowProgress"
+                            {
+                            "Name" = "8:ShowProgress"
+                            "DisplayName" = "8:#1009"
+                            "Description" = "8:#1109"
+                            "Type" = "3:5"
+                            "ContextData" = "8:1;True=1;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:1"
+                            "DefaultValue" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_FC710D1C455F4B5BBB2AE71D35F196E0"
+            {
+            "Name" = "8:#1902"
+            "Sequence" = "3:2"
+            "Attributes" = "3:3"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_9D65E3B1DC774CA090A6204B7A26C692"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:已完成"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFinishedDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
         }
         "MergeModule"
         {
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_D4B3B477627D407BAC1BEE23CCAC08DD"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_52550A74912442FF9758821E818BA3CB"
             {
             "SourcePath" = "8:..\\x64\\Release\\C Base Machine Learning.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_1C60767D0FE44F10A23FCA565EBE488D"
+            "Folder" = "8:_2BAEFA3A071C4FE59CFFC0A7015D4165"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"

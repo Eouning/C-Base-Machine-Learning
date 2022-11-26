@@ -2,15 +2,15 @@
 
 //线性回归演示界面
 void Linear_regression_presentaion() {
-
-    //创建画布
-    initgraph(1024, 768);//背景分辨率
-    setbkcolor(WHITE);//背景颜色
-
     //播放循环背景音乐
     BGM2();
 
+error:
+    //创建画布
+    initgraph(1024, 768);//背景分辨率
+
 Ori:
+    setbkcolor(WHITE);//背景颜色
     cleardevice();//清空
 
     //初始化
@@ -56,14 +56,17 @@ Again:
     char* Text1;
     IntToString(interation, &Text1);
     Text_show(860, 100, 100, 30, Text1, TextName1);
+    free(Text1);
 
     char* Text2;
     IntToString(Rank, &Text2);
     Text_show(860, 200, 100, 30, Text2, TextName2);
+    free(Text2);
 
     char* Text3;
     double_to_string(Learning_rat, &Text3, 5);
     Text_show(860, 300, 100, 30, Text3, TextName3);
+    free(Text3);
     
     //循环读入用户鼠标键盘的相关操作
     while (true)
@@ -86,6 +89,7 @@ Again:
                 //初始化按钮
                 if (msg.x >= 430 && msg.x <= 630 && msg.y >= 650 && msg.y <= 700) {
                     BGM();
+                    Train_free(Head);
                     goto Ori;
                 }
                 //基于BGD算法的线性回归开始按钮
@@ -134,27 +138,35 @@ Next:
     
 
     //初始化w[]与b
-    double* w = (double*)malloc(sizeof(double) * Rank);
-    if (*w == NULL) {
+    double* pt = (double*)malloc(sizeof(double) * Rank);
+    if (pt == NULL) {
         exit(0);
     }
+    double* w = pt;
+
     double b = 1;
     for (int i = 0; i < Rank; i++) {
         w[i] = 1;
     }
 
     //线性回归实现
-    Liner(10000*interation, 0.000001*Learning_rat, Head, w, &b,Rank,count,Is_BGD);
+    if (Liner(10000 * interation, 0.000001 * Learning_rat, Head, w, &b, Rank, count, Is_BGD)) {
+        free(w);
+        Train_free(Head);
+        goto error;
+    }
 
     char TextName8[] = "b:";
     char* Text8;
     double_to_string(b, &Text8, 4);
     Text_show(860, 400, 100, 30, Text8, TextName8);
+    free(Text8);
 
     char TextName9[] = "w[最高位]:";
     char* Text9;
     double_to_string(w[0], &Text9, 4);
     Text_show(860, 450, 100, 30, Text9, TextName9);
+    free(Text9);
 
     setlinecolor(BLUE);
     double y_o = now(25, w, b, Rank);
