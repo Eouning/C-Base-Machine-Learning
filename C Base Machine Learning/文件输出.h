@@ -2,6 +2,7 @@
 #define Wide 350
 #define Height 300
 
+//文件结果输出
 void FileOutput(double w[], double b, int Rank) {
     int FileCount = 1;
     char folderName[] = "1";
@@ -25,22 +26,22 @@ void FileOutput(double w[], double b, int Rank) {
         fprintf(fp, "本次回归函数为：%lfX+%lf", w[0], b);
         break;
     case 2:
-        fprintf(fp, "本次回归函数为：%lfX^2+%lfX+%lf",w[0],w[1], b);
+        fprintf(fp, "本次回归函数为：%lfX^2+%lfX+%lf", w[0], w[1], b);
         break;
     case 3:
-        fprintf(fp, "本次回归函数为：%lfX^3+%lfX^2+%lfX+%lf", w[0], w[1],w[2],b);
+        fprintf(fp, "本次回归函数为：%lfX^3+%lfX^2+%lfX+%lf", w[0], w[1], w[2], b);
         break;
     case 4:
-        fprintf(fp, "本次回归函数为：%lfX^4+%lfX^3+%lfX^2+%lfX+%lf", w[0], w[1], w[2],w[3], b);
+        fprintf(fp, "本次回归函数为：%lfX^4+%lfX^3+%lfX^2+%lfX+%lf", w[0], w[1], w[2], w[3], b);
         break;
     case 5:
-        fprintf(fp, "本次回归函数为：%lfX^5+%lfX^4+%lfX^3+%lfX^2+%lfX+%lf", w[0], w[1], w[2], w[3], w[4],b);
+        fprintf(fp, "本次回归函数为：%lfX^5+%lfX^4+%lfX^3+%lfX^2+%lfX+%lf", w[0], w[1], w[2], w[3], w[4], b);
         break;
     case 6:
-        fprintf(fp, "本次回归函数为：%lfX^6+%lfX^5+%lfX^4+%lfX^3+%lfX^2+%lfX+%lf", w[0], w[1], w[2], w[3], w[4],w[5], b);
+        fprintf(fp, "本次回归函数为：%lfX^6+%lfX^5+%lfX^4+%lfX^3+%lfX^2+%lfX+%lf", w[0], w[1], w[2], w[3], w[4], w[5], b);
         break;
     case 7:
-        fprintf(fp, "本次回归函数为：%lfX^7+%lfX^6+%lfX^5+%lfX^4+%lfX^3+%lfX^2+%lfX+%lf", w[0], w[1], w[2], w[3], w[4], w[5], w[6],b);
+        fprintf(fp, "本次回归函数为：%lfX^7+%lfX^6+%lfX^5+%lfX^4+%lfX^3+%lfX^2+%lfX+%lf", w[0], w[1], w[2], w[3], w[4], w[5], w[6], b);
         break;
     default:
         break;

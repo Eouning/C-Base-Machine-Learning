@@ -163,11 +163,7 @@ void IntToString(int x, char** ptext) {
 
 int double_to_string (double d,char**ptext, int decimal)
 {
-    if (d > 10000000 || d<-10000000) {
-        Error();
-        return 1;
-    }
-    else
+    if (d < 100000 && fabs(d - 100000)>1e-6 && d > -100000 && fabs(d + 100000)>1e-6)
     {
         decimal = decimal < 0 ? 0 : decimal;
         char dd[20];
@@ -195,12 +191,28 @@ int double_to_string (double d,char**ptext, int decimal)
             break;
 
         }
-        char* p = (char*)malloc(sizeof(char) * (strlen(dd) + 1));
+        char* p = (char*)malloc(sizeof(char) * strlen(dd)+1);
         if (p == NULL) {
             exit(0);
         }
         *ptext = p;
         strcpy(*ptext, dd);
+
+        return 0;
+    }
+    else if (d >=100000 || d<=-100000)
+    {
+        Error();
+        return 1;
+    }
+    else
+    {
+        char* p = (char*)malloc(sizeof(char)*10);
+        if (p == NULL) {
+            exit(0);
+        }
+        *ptext = p;
+        strcpy(*ptext, "无穷大");
 
         return 0;
     }
@@ -538,7 +550,7 @@ void BGM2() {
     mciSendString("open ./Back.mp3 alias 02 type MPEGVideo", 0, 0, 0);
     mciSendString("play 02 repeat", 0, 0, 0);
 }
-
+//错误溢出的弹窗
 void Error() {
     closegraph();
     

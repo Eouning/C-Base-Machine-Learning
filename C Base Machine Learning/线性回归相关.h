@@ -8,6 +8,16 @@ typedef struct _none {
 	struct _none* Next;
 }Train;
 
+//对数据进行预处理
+void Data_Preprocessing(Train* Head) {
+	Train* p = Head;
+	while (p) {
+		p->X = (p->X-350)/350;
+		p->Y = (p->Y-300)/300;
+		p = p->Next;
+	}
+}
+
 //训练组的增加
 void Train_append(double x, double y, Train** Head) {
 	Train* p = (Train*)malloc(sizeof(Train));
@@ -93,7 +103,10 @@ void S_Gradient_descent(Train* Head, double w[], double* b, int Rank, double Lea
 
 }
 
+//线性回归的主体
 int Liner(int interation, double Learning_rat, Train* Head, double w[], double* b, int Rank,int count,BOOL Is_BGD) {
+
+	Data_Preprocessing(Head);
 
 	double LR_add = Learning_rat / 100;
 
@@ -128,14 +141,14 @@ int Liner(int interation, double Learning_rat, Train* Head, double w[], double* 
 		if (i % 10000 == 0 && i != 0) {
 
 			for (double k = 26; k < 725; k += 0.1) {
-				double y = now(k - 325, n_w, n_b, Rank) + 325;
+				double y = now((k-350)/350, n_w, n_b, Rank) *300+300;
 				if (y >= 26 && y <= 599) {
 					putpixel(k, y, RGB(234, 234, 234));
 				}
 			}
 
 			for (double k = 26; k < 725; k += 0.1) {
-				double y = now(k - 325, w, *b, Rank) + 325;
+				double y = now((k-350)/350, w, *b, Rank)*300+300;
 				if (y >= 26 && y <= 599) {
 					putpixel(k, y, RED);
 				}
@@ -155,7 +168,7 @@ int Liner(int interation, double Learning_rat, Train* Head, double w[], double* 
 			while (p)
 			{
 				setfillcolor(BLACK);
-				fillcircle(p->X + 325, p->Y + 325, 2);
+				fillcircle(p->X*350+350, p->Y *300+300, 2);
 				p = p->Next;
 			}
 

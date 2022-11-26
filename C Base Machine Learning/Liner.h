@@ -4,26 +4,34 @@
 void Linear_regression_presentaion() {
     //播放循环背景音乐
     BGM2();
+    //初始化
+    char TextName2[] = "拟合阶数:";
+    char TextName1[] = "学习次数:";
+    char TextName3[] = "学习率:";
+    int count = 0;//数据集中数据个数
+    int Rank = 1;
+    int interation = 100000;
+    double Learning_rat =1;
+    BOOL Is_BGD = true;
+    Train* Head = NULL;
 
 error:
     //创建画布
     initgraph(1024, 768);//背景分辨率
+    HWND hWnd = GetHWnd();
+    SetWindowText(hWnd, "这只是一个普通的窗口名称 O-O");
 
 Ori:
     setbkcolor(WHITE);//背景颜色
     cleardevice();//清空
 
-    //初始化
-    char TextName2[] = "拟合阶数:";
-    char TextName1[] = "学习次数:";
-    char TextName3[] = "学习率:";
-
-    BOOL Is_BGD = true;
-    int count = 0;//数据集中数据个数
-    int Rank = 1;
-    int interation = 100000;
-    double Learning_rat =1;
-    Train* Head=NULL;
+    count = 0;//数据集中数据个数
+    Rank = 1;
+    interation = 10000;
+    Learning_rat = 1.0;
+    Is_BGD = true;
+    
+    Head=NULL;
 
     setlinecolor(BLACK);
     setfillcolor(BLACK);
@@ -35,9 +43,6 @@ Ori:
     setlinecolor(RGB(124, 124, 124));
     setfillcolor(RGB(234, 234, 234));
     fillrectangle(25, 25, 725, 600);
-
-    HWND hWnd = GetHWnd();
-    SetWindowText(hWnd, "这只是一个普通的窗口名称 O-O");
 
 Again:
 
@@ -83,7 +88,7 @@ Again:
                 //打点后训练集增长
                 if (msg.x >= 25 && msg.x <= 725 && msg.y >= 25 && msg.y <= 600) {
                     fillcircle(msg.x, msg.y, 2);
-                    Train_append(msg.x-325, msg.y-325, &Head);
+                    Train_append(msg.x, msg.y, &Head);
                     count++;
                 }
                 //初始化按钮
@@ -150,7 +155,7 @@ Next:
     }
 
     //线性回归实现
-    if (Liner(10000 * interation, 0.000001 * Learning_rat, Head, w, &b, Rank, count, Is_BGD)) {
+    if (Liner(10000 * interation,0.00001*Learning_rat, Head, w, &b, Rank, count, Is_BGD)) {
         free(w);
         Train_free(Head);
         goto error;
@@ -171,7 +176,7 @@ Next:
     setlinecolor(BLUE);
     double y_o = now(25, w, b, Rank);
     for (double i = 25.1; i < 725; i+=0.1) {
-        double y = now(i-325, w, b, Rank)+325;
+        double y = now((i-350)/350, w, b, Rank)*300+300;
         if (y>25 && y <600) {
             if (y_o > 25 && y_o < 600) {
                 line(i - 0.1, y_o, i, y);
@@ -190,7 +195,7 @@ Next:
     {
         setlinecolor(BLACK);
         setfillcolor(BLACK);
-        fillcircle(p->X + 325, p->Y + 325, 2);
+        fillcircle(p->X *350+350, p->Y *300+300, 2);
         p = p->Next;
     }
 
