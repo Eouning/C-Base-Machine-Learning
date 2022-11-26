@@ -163,7 +163,7 @@ void IntToString(int x, char** ptext) {
 
 int double_to_string (double d,char**ptext, int decimal)
 {
-    if (d < 100000 && fabs(d - 100000)>1e-6 && d > -100000 && fabs(d + 100000)>1e-6)
+    if (d < 1000000 && fabs(d - 1000000)>1e-6 && d > -1000000 && fabs(d + 1000000)>1e-6)
     {
         decimal = decimal < 0 ? 0 : decimal;
         char dd[20];
@@ -191,7 +191,7 @@ int double_to_string (double d,char**ptext, int decimal)
             break;
 
         }
-        char* p = (char*)malloc(sizeof(char) * strlen(dd)+1);
+        char* p = (char*)malloc(sizeof(char) * (strlen(dd)+30));
         if (p == NULL) {
             exit(0);
         }
@@ -200,7 +200,7 @@ int double_to_string (double d,char**ptext, int decimal)
 
         return 0;
     }
-    else if (d >=100000 || d<=-100000)
+    else if (d >=1000000 || d<=-1000000)
     {
         Error();
         return 1;

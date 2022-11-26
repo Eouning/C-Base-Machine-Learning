@@ -20,33 +20,60 @@ void FileOutput(double w[], double b, int Rank) {
     char TxtName[] = "\\本次线性回归函数.txt";
     strcat(FilePosition, TxtName);
     FILE* fp = fopen(FilePosition, "a");
-    switch (Rank)
-    {
-    case 1:
-        fprintf(fp, "本次回归函数为：%lfX+%lf", w[0], b);
-        break;
-    case 2:
-        fprintf(fp, "本次回归函数为：%lfX^2+%lfX+%lf", w[0], w[1], b);
-        break;
-    case 3:
-        fprintf(fp, "本次回归函数为：%lfX^3+%lfX^2+%lfX+%lf", w[0], w[1], w[2], b);
-        break;
-    case 4:
-        fprintf(fp, "本次回归函数为：%lfX^4+%lfX^3+%lfX^2+%lfX+%lf", w[0], w[1], w[2], w[3], b);
-        break;
-    case 5:
-        fprintf(fp, "本次回归函数为：%lfX^5+%lfX^4+%lfX^3+%lfX^2+%lfX+%lf", w[0], w[1], w[2], w[3], w[4], b);
-        break;
-    case 6:
-        fprintf(fp, "本次回归函数为：%lfX^6+%lfX^5+%lfX^4+%lfX^3+%lfX^2+%lfX+%lf", w[0], w[1], w[2], w[3], w[4], w[5], b);
-        break;
-    case 7:
-        fprintf(fp, "本次回归函数为：%lfX^7+%lfX^6+%lfX^5+%lfX^4+%lfX^3+%lfX^2+%lfX+%lf", w[0], w[1], w[2], w[3], w[4], w[5], w[6], b);
-        break;
-    default:
-        break;
-    }
-    fclose(fp);
 
+    char* p = (char*)malloc(sizeof(char) * ((Rank + 1) * 16 + 27));
+    if (p==NULL)
+    {
+        exit(0);
+    }
+    char* FileContent = p;
+    strcat(FileContent, "本次线性回归的结果为：");
+    int Count = Rank;
+    while (Count>0)
+    {
+        char* pt;
+        double_to_string(w[Rank - Count], &pt, 5);
+        if (strcmp(pt, "无穷大") == 0) {
+            goto Error;
+        }
+        strcat(FileContent, pt);
+        free(pt);
+
+        if (Count == 1) {
+            strcat(FileContent, "X+");
+        }
+        else
+        {
+            strcat(FileContent,"X^");
+            char* pt;
+            IntToString(Count, &pt);
+            strcat(FileContent, pt);
+            free(pt);
+            strcat(FileContent, "+");
+        }
+        Count++;
+    }
+    char* pt;
+    double_to_string(b, &pt, 5);
+    if (strcmp(pt, "无穷大") == 0) {
+        goto Error;
+    }
+    strcat(FileContent, pt);
+    free(pt);
+    fprintf(fp, FileContent);
+
+    fclose(fp);
+    free(FileContent);
     free(FilePosition);
+
+    goto Over;
+Error:
+    strcpy(FileContent, "本函数拟合失败，请调整学习率后重试");
+    fprintf(fp, FileContent);
+
+    fclose(fp);
+    free(FileContent);
+    free(FilePosition);
+Over:
+    int 占位用的 = 0;
 }
