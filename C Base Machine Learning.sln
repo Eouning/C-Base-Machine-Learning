@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.32929.386
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C Base Machine Learning", "C Base Machine Learning\C Base Machine Learning.vcxproj", "{A474313D-448F-4EE9-99A5-40C4B972A01E}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CBML", "CBML\CBML.vdproj", "{EB84A33B-8ED1-450F-BFD6-1152C352A7C4}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CBML", "CBML\CBML.vdproj", "{4A8B04FE-02CA-4ABC-949B-4C8A72D6030F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{A474313D-448F-4EE9-99A5-40C4B972A01E}.Release|x64.Build.0 = Release|x64
 		{A474313D-448F-4EE9-99A5-40C4B972A01E}.Release|x86.ActiveCfg = Release|Win32
 		{A474313D-448F-4EE9-99A5-40C4B972A01E}.Release|x86.Build.0 = Release|Win32
-		{EB84A33B-8ED1-450F-BFD6-1152C352A7C4}.Debug|x64.ActiveCfg = Debug
-		{EB84A33B-8ED1-450F-BFD6-1152C352A7C4}.Debug|x86.ActiveCfg = Debug
-		{EB84A33B-8ED1-450F-BFD6-1152C352A7C4}.Release|x64.ActiveCfg = Release
-		{EB84A33B-8ED1-450F-BFD6-1152C352A7C4}.Release|x86.ActiveCfg = Release
+		{4A8B04FE-02CA-4ABC-949B-4C8A72D6030F}.Debug|x64.ActiveCfg = Debug
+		{4A8B04FE-02CA-4ABC-949B-4C8A72D6030F}.Debug|x86.ActiveCfg = Debug
+		{4A8B04FE-02CA-4ABC-949B-4C8A72D6030F}.Release|x64.ActiveCfg = Release
+		{4A8B04FE-02CA-4ABC-949B-4C8A72D6030F}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -51,7 +51,7 @@ void FileOutput(double w[], double b, int Rank) {
             free(pt);
             strcat(FileContent, "+");
         }
-        Count++;
+        Count--;
     }
     char* pt;
     double_to_string(b, &pt, 5);
